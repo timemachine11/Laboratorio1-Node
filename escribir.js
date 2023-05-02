@@ -1,3 +1,4 @@
+//12
 const fs = require("fs") //fs = file system
 
 let numeros = ""

@@ -2,8 +2,7 @@
 console.log("Hola Mundo");
 
 //2
-let nombre = "Juan";
-let edad = 15;
+let nombre = "Juan", edad = 15;
 
 console.log("El nombre es " + nombre + " y tiene " + edad , "años");
 
@@ -11,8 +10,7 @@ console.log("El nombre es " + nombre + " y tiene " + edad , "años");
 console.log(`El nombre es ${nombre} y tiene ${edad} años`);
 
 //4
-let num1 = 40;
-let num2 = 90;
+let num1 = 40, num2 = 90;
 
 console.log(`La suma de ${num1} + ${num2} es ${num1 + num2}`);
 
@@ -34,18 +32,26 @@ for (var i = 0; i<arreglo.length; i++) {
 for (var i = 1; i<100; i++) {
     arreglo.push((Math.random()*100).toFixed(0))   
 
-//7
-    arreglo.forEach(function(num) {
-        console.log(num)
-    })
 }
 
+//7
+/*
+arreglo.forEach(function(x) {
+    console.log(x)
+})
+*/
+
+//otra forma de hacer el foreach sin el function
+arreglo.forEach((x) => {
+    console.log(x)
+})
+
 //8
-var persona {
-    nombre: Juana,
+var persona = {
+    nombre: "Juana",
     edad: "55",
     direccion: "San nicolas"
 }
 
-console.log(persona);
-console.log(persona.nombre);
+//console.log(persona)
+console.log(persona.direccion)
